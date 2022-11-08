@@ -1,0 +1,47 @@
+$font: 'Arial', 'Helvetica', sans-serif;
+$color: #DDDDDD;
+body {
+font-family: $font;
+background-color: $color;
+margin: 25px;
+padding: 25px;
+}
+h1 {
+text-transform: uppercase;
+}
+.formfield {
+    display: block;
+}
+
+.success{
+    background-color: #00FF00
+   }
+   
+.error, .errorlist{
+    background-color: #FF0000   
+}
+
+.menu{
+    font-weight: bold;
+    float: left;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #111;
+    li {
+    float: left;
+    }
+    a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    a:hover {
+    background-color: #444;
+    }
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+<h2>{{ note.title }}</h2><hr>
+<p> {{ note.description }}</p><hr>
+<p> Created:{{ note.created_at }}</p>
+<p> Last Updated: {{ note.updated_at }}</p>
+<input type="button" onclick="location.href='{% url 'notes_update' note.id %}';" value="Edit" />
+<input type="button" onclick="location.href='{% url 'notes_delete' note.id %}';" value="Delete" />
+</body>
+{% endblock content %}
